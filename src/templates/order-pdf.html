@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Order!</title>
+  </head>
+  <body>
+    <h1>Order {{order._id}}</h1>
+    <ul>
+      {{#each products}}
+      <li>ProductId: {{this.product_id}}</li>
+      <li>Quantity: {{this.quantity}}</li>
+      <br />
+      {{/each}}
+    </ul>
+  </body>
+</html>
